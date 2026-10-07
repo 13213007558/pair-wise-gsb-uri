@@ -150,6 +150,7 @@ module URI
   #   # =>
   #   {"MAILTO"=>URI::MailTo,
   #    "LDAPS"=>URI::LDAPS,
+  #    "TEL"=>URI::Tel,
   #    "WS"=>URI::WS,
   #    "HTTP"=>URI::HTTP,
   #    "HTTPS"=>URI::HTTPS,
