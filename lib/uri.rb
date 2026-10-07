@@ -55,6 +55,7 @@
 # - RFC2396[https://www.rfc-editor.org/rfc/rfc2396]
 # - RFC2732[https://www.rfc-editor.org/rfc/rfc2732]
 # - RFC3986[https://www.rfc-editor.org/rfc/rfc3986]
+# - RFC3966[https://www.rfc-editor.org/rfc/rfc3966]
 #
 # == Class tree
 #
@@ -66,6 +67,7 @@
 #   - URI::LDAP - (in uri/ldap.rb)
 #     - URI::LDAPS - (in uri/ldaps.rb)
 #   - URI::MailTo - (in uri/mailto.rb)
+#   - URI::TEL - (in uri/tel.rb)
 # - URI::Parser - (in uri/common.rb)
 # - URI::REGEXP - (in uri/common.rb)
 #   - URI::REGEXP::PATTERN - (in uri/common.rb)
@@ -100,5 +102,6 @@ require_relative 'uri/https'
 require_relative 'uri/ldap'
 require_relative 'uri/ldaps'
 require_relative 'uri/mailto'
+require_relative 'uri/tel'
 require_relative 'uri/ws'
 require_relative 'uri/wss'
