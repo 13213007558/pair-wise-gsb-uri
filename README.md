@@ -3,7 +3,7 @@
 [![CI](https://github.com/ruby/uri/actions/workflows/test.yml/badge.svg)](https://github.com/ruby/uri/actions/workflows/test.yml)
 [![Yard Docs](https://img.shields.io/badge/docs-exist-blue.svg)](https://ruby.github.io/uri/)
 
-URI is a module providing classes to handle Uniform Resource Identifiers [RFC3986](http://tools.ietf.org/html/rfc3986).
+URI is a module providing classes to handle Uniform Resource Identifiers, including RFC 3986 URIs and RFC 8141 URNs.
 
 ## Features
 
@@ -42,6 +42,13 @@ uri.query     #=> "id=30&limit=5"
 uri.fragment  #=> "time=1305298413"
 
 uri.to_s      #=> "http://foo.com/posts?id=30&limit=5#time=1305298413"
+
+urn = URI("urn:example:resource?+resolver=one?=profile=one#part")
+urn.nid           #=> "example"
+urn.nss           #=> "resource"
+urn.r_component   #=> "resolver=one"
+urn.q_component   #=> "profile=one"
+urn.fragment      #=> "part"
 ```
 
 ## Development

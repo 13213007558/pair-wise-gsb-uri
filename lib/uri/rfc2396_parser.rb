@@ -206,6 +206,10 @@ module URI
     #   #=> #<URI::LDAP ldap://ldap.example.com/dc=example?user=john>
     #
     def parse(uri)
+      str = String.try_convert(uri)
+      if str && /\Aurn:/i.match?(str)
+        return URI::URN.parse(str, self)
+      end
       URI.for(*self.split(uri), self)
     end
 

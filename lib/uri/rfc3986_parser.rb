@@ -132,6 +132,10 @@ module URI
     end
 
     def parse(uri) # :nodoc:
+      str = String.try_convert(uri)
+      if str && /\Aurn:/i.match?(str)
+        return URI::URN.parse(str, self)
+      end
       URI.for(*self.split(uri), self)
     end
 

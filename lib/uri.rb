@@ -1,6 +1,5 @@
 # frozen_string_literal: false
-# URI is a module providing classes to handle Uniform Resource Identifiers
-# (RFC2396[https://www.rfc-editor.org/rfc/rfc2396]).
+# URI is a module providing classes to handle Uniform Resource Identifiers.
 #
 # == Features
 #
@@ -53,6 +52,7 @@
 # - RFC2368[https://www.rfc-editor.org/rfc/rfc2368]
 # - RFC2373[https://www.rfc-editor.org/rfc/rfc2373]
 # - RFC2396[https://www.rfc-editor.org/rfc/rfc2396]
+# - RFC8141[https://www.rfc-editor.org/rfc/rfc8141]
 # - RFC2732[https://www.rfc-editor.org/rfc/rfc2732]
 # - RFC3986[https://www.rfc-editor.org/rfc/rfc3986]
 #
@@ -66,6 +66,7 @@
 #   - URI::LDAP - (in uri/ldap.rb)
 #     - URI::LDAPS - (in uri/ldaps.rb)
 #   - URI::MailTo - (in uri/mailto.rb)
+#   - URI::URN - (in uri/urn.rb)
 # - URI::Parser - (in uri/common.rb)
 # - URI::REGEXP - (in uri/common.rb)
 #   - URI::REGEXP::PATTERN - (in uri/common.rb)
@@ -102,3 +103,4 @@ require_relative 'uri/ldaps'
 require_relative 'uri/mailto'
 require_relative 'uri/ws'
 require_relative 'uri/wss'
+require_relative 'uri/urn'
